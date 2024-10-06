@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import TableComponent from "./components/TableComponent";
+import TableComponent from "./components/TableWithInput";
 
 export default function App() {
   const [url, setUrl] = useState("https://jsonplaceholder.typicode.com/users");
-  const [data, setData] = useState(null);
+  const [data, setData] = useState([]);
 
   return (
     <>
