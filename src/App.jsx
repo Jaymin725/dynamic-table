@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Table from "./components/Table";
+import TableComponent from "./components/TableComponent";
 
 export default function App() {
   const [url, setUrl] = useState("https://jsonplaceholder.typicode.com/users");
@@ -22,7 +22,7 @@ export default function App() {
       >
         Get Data
       </button>
-      {data == null ? <p>No data</p> : <Table data={data} />}
+      <TableComponent data={data} />
     </>
   );
 }
